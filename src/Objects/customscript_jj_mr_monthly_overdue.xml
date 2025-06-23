@@ -1,0 +1,30 @@
+<mapreducescript scriptid="customscript_jj_mr_monthly_overdue">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>JJ MR Monthly overdue</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/JobinAndJismi/OTP-8891_Monthly Over Due Reminder for Customer/JJ_mr_monthly_overdue.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jj_mr_monthly_overdue">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>SCHEDULED</status>
+      <title>JJ MR Monthly overdue</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <monthly>
+          <everyxmonths>1</everyxmonths>
+          <repeat></repeat>
+          <startdate>2025-06-02</startdate>
+          <starttime>01:00:00Z</starttime>
+        </monthly>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>
