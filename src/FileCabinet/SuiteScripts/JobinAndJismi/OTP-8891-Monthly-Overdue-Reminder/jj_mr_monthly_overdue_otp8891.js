@@ -21,7 +21,7 @@ ${OTP-8891}:{Monthly Over Due Reminder for Customer}
 *
 ** REVISION HISTORY
  *
-* @version 1.0 04-June-2025 : Created the initial build by JJ0403
+* @version 1.0 23-June-2025 : Created the initial build by JJ0403
 
 ***********************************************************************************************
 **********************/
@@ -48,13 +48,8 @@ define(['N/search', 'N/email', 'N/file', 'N/log'],
          * @since 2015.2
          */
 
-        const getInputData = (inputContext) => {
-            try{
-                fetchInvoiceData();
-            } catch (error) {
-                log.error('Error fetching invoice data', error.message);
-            }
-        }
+        const getInputData = (inputContext) => fetchInvoiceData();
+
         /**
          * Defines the function that is executed when the map entry point is triggered. This entry point is triggered automatically
          * when the associated getInputData stage is complete. This function is applied to each key-value pair in the provided
