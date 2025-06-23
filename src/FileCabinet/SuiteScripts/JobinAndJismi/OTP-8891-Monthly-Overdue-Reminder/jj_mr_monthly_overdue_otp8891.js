@@ -16,8 +16,9 @@ ${OTP-8891}:{Monthly Over Due Reminder for Customer}
 *
 *Date Created:04-June-2025
 *
-*Description:This script is designed to automates monthly email notifications for customers with overdue invoices, attaching a CSV file with
-*invoice details. The sender is the Sales Rep or a static NetSuite Admin if none is assigned.
+*Description:This script is designed to automates monthly email notifications for customers with 
+*overdue invoices, attaching a CSV file with invoice details. The sender is the Sales Rep or a 
+*static NetSuite Admin if none is assigned.
 *
 ** REVISION HISTORY
  *
